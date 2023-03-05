@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/transitional.dtd">
+<html>
+<head>
+<title>Capri Suns</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="{% static 'stylde.css' %}" />
+</head>
+<body style="background-image: url(static/images/drought.jpg);">
+<div id="main">
+  <div id="left">
+    <div id="top">
+      <dl class="left">
+        <dt>Latest news</dt>
+        <dd><a href="#">Update 5 - Glyphosate: The Apocalypse</a></dd>
+        <dd><a href="#">Update 4 - Climate change is a myth</a></dd>
+        <dd><a href="#">Update 3 - The Earth is actually flat</a></dd>
+      </dl>
+      <dl class="right">
+        <dt>Trending posts</dt>
+        <dd><a href="#">Topic 3 - Climate change: The UAE </a></dd>
+        <dd><a href="#">Topic 2 - what is the meaning of life?</a></dd>
+        <dd><a href="#">Topic 1 - Welcome to the board</a></dd>
+      </dl>
+      <div id="topbottom"> </div>
+    </div>
+    <div id="content">
+      <div id="headline">
+        <h1>Capri Suns &rsaquo; Climate Change Forum</h1>
+      </div>
+      <h2>Spreading Awareness - An Overview</h2>
+      <h3>about our challenge</h3>
+
+      <video controls autoplay width="250">
+
+        <source src="{% static 'videos/poster.mp4' %}" type="video/mp4">
+      </video>
+
+      <p>
+        The UAE is classified among the categories of countries with the highest rate of vulnerability to the potential impacts of climate change in the world. 
+        These changes could range from warmer weather, less precipitation, droughts, higher sea levels and more storms.
+      </p>
+      <h3>the climate today</h3>
+      <p>The climate generally is hot and arid; yet, on the coast, humidity can reach over 90 percent in summer and autumn. Inland is far less humid although the temperature is higher; sometimes, exceeding 50 degrees Celsius before midday in July.</p>
+      <h3>Living the situation</h3>
+      <p>We, the Capri Suns, have published this website so we can all share our experiences on climate change.</p>
+      <h2>Impact of climate change</h2>
+
+      <video controls autoplay width="250" style="text-align:center">
+
+        <source src="{% static 'videos/uaeposter.mp4' %}" type="video/mp4">
+      </video>
+
+      <h3>Part one - On the sea level</h3>
+      <p>
+        The rising seas.
+        In 2010, Stockholm Environment Institute's US Center completed a report for Abu Dhabi, addressing how climate change will affect ecosystems, infrastructure and the economy and what impact it might have on the health of residents.
+        The Stockholm report found that the UAE could lose up to 6 percent of its populated and developed coastline by the end of the century because of rising sea levels.
+      </p>
+      <h3>Part two - On water resources and natural disasters</h3>
+      <p>On Water resources and natural disasters-</p>
+      <h3>Part three - On the Human Health</h3>
+      <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <div id="right">
+    <div style="background: url(static/images/topright.gif) no-repeat top right; height: 10px;">&nbsp;</div>
+    <div id="inner">
+      <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" size="10" name="name" id="name" />
+        <label for="pw">Password:</label>
+        <input type="password" size="10" name="pw" id="pw" />
+        <div style="text-align: right;"><a href="{% url 'main:register' %}">Register</a> |
+          <input type="submit" class="button" value="Go!" name="button" />
+        </div>
+      </form>
+      <br />
+      <br />
+      <h5>Site</h5>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h5>Board</h5>
+      <ul class="nav">
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Members</a></li>
+      </ul>
+      <h5>Discussion</h5>
+      <ul class="nav">
+        <li><a href="{% url 'main:discussion' %}">Join the discussion!</a><li></li>
+      </ul>
+      <h5>Links</h5>
+      <ul class="nav">
+        <li><a href="https://www.noaa.gov/news-release/carbon-dioxide-now-more-than-50-higher-than-pre-industrial-levels">Rising CO<sub>2</sub> levels</a></li>
+      </ul>
+    </div>
+  </div>
+  <br style="clear: both;" />
+</div>
+<div id="footer">Capri Suns - No skills, just vibes</div>
+</body>
+</html>
