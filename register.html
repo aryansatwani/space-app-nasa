@@ -1,0 +1,13 @@
+{% load static %}
+<div class="container">
+    <link rel="stylesheet" type="text/css" href="{% static 'screenstyle.css' %}" />
+    <h1>User Registration Form</h2>
+        <br>
+    <div class="card-body">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
