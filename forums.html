@@ -1,0 +1,49 @@
+{% load static %}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Discussion Forum</title>
+<link rel="stylesheet" type="text/css" href="{% static 'screenstyle.css' %}" />
+</head>
+<body>
+<div class="container">
+  <div class="titleblock" style="background-image: url(../static/images/leaf.jpg)">
+    <h1>Living the climate..</h1>
+    <p>&ldquo;What you do makes a difference, and you have to decide what kind of difference you want to make&rdquo;</p>
+  </div>
+  <div>
+    <ul class="navbar">
+      <li><a href="{% url 'main:home' %}" class="nav">Home</a></li>
+      <li><a href="#" class="nav">About Us</a></li>
+      <li><a href="#" class="nav">Products</a></li>
+      <li><a href="#" class="nav">Contact</a></li>
+    </ul>
+  </div>
+  <div class="rightcontainer">
+    <div class="rightbox">
+      <h2>News</h2>
+      <p>This morning a man in New Zealand got out of bed and had breakfast. Find out more <a href="#">here</a>.</p>
+    </div>
+    <div class="rightbox linkbox">
+      <h2>Links</h2>
+      <a href="#">Google</a> <a href="#">OSWD</a> <a href="#">WPDFD</a> <a href="#">stock.xchng</a> <a href="#">THG</a> <a href="#">How Stuff Works</a> </div>
+  </div>
+  <div class="content">
+    <h2>Welcome to Localize</h2>
+    <p>This page is for UAE residents to share their experiences on climate change, in the country. I found inspiration for this design and also a lot of help from the designs of haran.</p>
+    <h2>New evidence suggests the Earth is actually Hyperbolic</h2>
+    <p>It's amazing how ignorant human beings can be. For centuries the world was thought to be round.</p>
+    <h2>More Filler Text</h2>
+    <p>Morbi elit. Integer in est. In hac habitasse platea dictumst. Ut bibendum odio eget velit. Aliquam sed nulla vel quam nonummy suscipit. Etiam fringilla, nulla quis fermentum pretium, neque risus convallis odio, id convallis magna diam ac nisl.</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+  </div>
+  <div class="footer">
+    <div class="right">
+      <p>&copy; Capri Suns - Drink Juice, win the deuce</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
